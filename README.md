@@ -54,3 +54,8 @@ POST http://localhost:8080/api/commands
     "time":"2025-07-19T12:00:00Z"
 }
 ```
+
+4. Для просмотра аудита в кафке нужно открыть новый терминал и выполнить следующее:
+```
+docker exec kafka /opt/bitnami/kafka/bin/kafka-console-consumer.sh --topic audit-topic --bootstrap-server localhost:9092
+```
