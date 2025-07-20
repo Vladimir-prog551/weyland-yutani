@@ -1,0 +1,5 @@
+com.vova.audit.config.AuditAutoConfiguration
+com.vova.audit.config.KafkaConfig
+com.vova.metric.config.MetricAutoConfiguration
+com.vova.command.config.CommandAutoConfiguration
+com.vova.exception.config.ExceptionAutoConfiguration

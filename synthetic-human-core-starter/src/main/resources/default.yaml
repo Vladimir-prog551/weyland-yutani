@@ -1,0 +1,35 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+synthetic:
+  human:
+    core:
+      starter:
+        audit:
+          mode: kafka
+          kafka:
+            topic: audit-topic
+        command:
+          queue:
+            size: 1000
+          pool:
+            core: 2
+            max: 4
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: health, metrics, info
+  metrics:
+    enable:
+      android: true
+      jvm: true
+      system: true
+      process: true
+    export:
+      simple:
+        enabled: true
