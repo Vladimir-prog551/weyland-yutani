@@ -1,6 +1,29 @@
 # Weyland-Yutani
 
-Данный проект включает в себя synthetic-human-core-starter, который будет используется для реализации логики работы всех будущих моделей искусственных людей, а также простейший сервис-эмулятор синтетика bishop-prototype, который принимает команды с помощью REST API и демонстрирует разработанный стартер.
+[![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat&logo=spring&logoColor=white)]()
+[![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=flat&logo=apache-kafka&logoColor=white)]()
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)]()
+[![Java](https://img.shields.io/badge/Java_17-ED8B00?style=flat&logo=openjdk&logoColor=white)]()
+
+Synthetic Human Core Starter ("Project Bishop") - базовый модуль для управления андроидами Weyland-Yutani с полным циклом мониторинга и аудита.
+
+## Ключевые возможности
+
+**Ядро андроида:**
+- Прием и исполнение команд с приоритезацией (CRITICAL/COMMON)
+- Очередь задач с ограниченной емкостью
+- Полный аудит действий через Kafka или консоль
+- Реaltime-метрики производительности
+
+**Система мониторинга:**
+- Текущая загрузка (очередь задач)
+- Статистика по авторам команд
+- Интеграция с Spring Actuator
+
+**Гарантии безопасности:**
+- Валидация всех входящих команд
+- Полный трейс выполнения операций
+- Единая система обработки ошибок
 
 ## Старт через докер
 
